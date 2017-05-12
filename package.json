@@ -1,0 +1,42 @@
+{
+  "name": "zenio",
+  "version": "0.0.3",
+  "description": "HTTP request with Promise",
+  "main": "lib/zenio.js",
+  "bin": {
+    "zenio": "bin/zenio.js"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junyiz/zenio.git"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "request",
+    "zenio",
+    "io"
+  ],
+  "author": "Junyi Zhang <junyime@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junyiz/zenio/issues"
+  },
+  "homepage": "https://github.com/junyiz/zenio#readme",
+  "dependencies": {
+    "iconv-lite": "^0.4.13"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "koa": "^2.1.0",
+    "koa-body": "^2.0.0",
+    "mocha": "^3.1.2"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ]
+}
