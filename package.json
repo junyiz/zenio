@@ -1,6 +1,6 @@
 {
   "name": "zenio",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "HTTP request with Promise",
   "main": "lib/zenio.js",
   "bin": {
