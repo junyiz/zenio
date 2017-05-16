@@ -10,10 +10,9 @@ npm install zenio --save
 # Usage
 
 ```javascript
-const co = require('co')
 const zenio = require('zenio')
 
-co(async function() {
+(async function() {
   zenio.setOptions({
     json: true
   })
@@ -21,7 +20,7 @@ co(async function() {
     'User-Agent': 'zenio'
   })
   console.log('repo id:', repo.id, 'repo name:', repo.full_name)
-})
+})()
 ```
 or 
 ```javascript
