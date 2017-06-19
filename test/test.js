@@ -2,7 +2,7 @@ const co = require('co')
 const expect = require('chai').expect
 const server = require('./support/server.js')
 const uri = server.uri
-const zenio = require('../index')
+const zenio = require('../lib/zenio')
 
 describe('zenio', function () {
   it('get', function (done) {
@@ -25,6 +25,19 @@ describe('zenio', function () {
     co(async function () {
       let res = await zenio.post(uri, {
         name: 'junyiz'
+      })
+      res = JSON.parse(res)
+      expect(res.name).to.be.equal('junyiz')
+      done()
+    })
+  })
+
+  it('post json', function (done) {
+    co(async function () {
+      let res = await zenio.post(uri, {
+        name: 'junyiz'
+      }, {
+        'Content-Type': 'application/json'
       })
       res = JSON.parse(res)
       expect(res.name).to.be.equal('junyiz')
